@@ -148,7 +148,7 @@ export default function Navbar() {
                             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                               <div className="relative  bg-white p-7 ">
                                 {LeLivre.map((item) => (
-                                  <Link href={item.href} >
+                                  <Link>
                                     <a
                                       className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                                     >
@@ -206,12 +206,11 @@ export default function Navbar() {
                             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                               <div className="relative  bg-white p-7 ">
                                 {AllerPlusLoin.map((item) => (
-                                    <a  href="https://www.abolirlapolice.org/AllerPlusLoin/allerPlusLoin"
-                                      key={item.name}
+                                    <a  href="https://www.abolirlapolice.org/AllerPlusLoin/allerPlusLoin"        
                                       className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                                     >
 
-                                      <div className="ml-4 pt-3">
+                                      <div className="ml-4 pt-3" key={item.name}>
                                         <p className="text-sm font-medium text-gray-900">
                                           {item.name}
                                         </p>
@@ -240,10 +239,8 @@ export default function Navbar() {
                       >
                         <div className='flex flex-col'>
               
-                            <a       href='https://www.abolirlapolice.org/histoires'> Partager des histoires </a>
+                            <a  href='https://www.abolirlapolice.org/histoires'> Partager des histoires </a>
              
-
-
                           {router.pathname == '/histoires' ?
                             <div className='text-center font-bold md:text-2xl text-red-700 transform -translate-y-6'>
                               __
@@ -293,10 +290,9 @@ export default function Navbar() {
                                    
                                   
                                     <a href="https://www.abolirlapolice.org/groupes"
-                                      key={item.name}
                                       className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                                     >
-                                      <div className="ml-4 pt-3">
+                                      <div className="ml-4 pt-3"key={item.name}>
                                         <p className="text-sm font-medium text-gray-900">
                                           {item.name}
                                         </p>
@@ -379,10 +375,9 @@ export default function Navbar() {
                       
                     
                       <a href='https://www.abolirlapolice.org/groupes'
-                        key={item.name}
                         className="flex items-center p-2 -m-3 pt-2  transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                       >
-                        <div className="ml-4 pt-3">
+                        <div className="ml-4 pt-3" key={item.name}>
                           <p className="text-sm font-medium text-gray-900">
                             {item.name}
                           </p>
