@@ -148,12 +148,11 @@ export default function Navbar() {
                             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                               <div className="relative  bg-white p-7 ">
                                 {LeLivre.map((item) => (
-                                  <Link href={item.href}>
+                                  <Link href={item.href} >
                                     <a
-                                      key={item.name}
                                       className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                                     >
-                                      <div className="ml-4 pt-3">
+                                      <div className="ml-4 pt-3" key={item.name}>
                                         <p className="text-sm font-medium text-gray-900 ">
                                           {item.name}
                                         </p>
@@ -332,17 +331,15 @@ export default function Navbar() {
                 <div className='pl-5 pb-4'>
 
                   {LeLivre.map((item) => (
-                    <Link href="/">
+                    <Link href="/" >
                       <a
-
-                        key={item.name}
                         className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                       >
 
                         {/* <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white sm:h-12 sm:w-12">
                           <item.icon aria-hidden="true" />
                         </div> */}
-                        <div className="ml-4 pt-3">
+                        <div className="ml-4 pt-3" key={item.name}>
                           <p className="text-sm font-medium text-gray-900 ">
                             {item.name}
                           </p>
