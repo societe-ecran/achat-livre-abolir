@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-// import script from 'next/script'
+import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -10,9 +10,10 @@ export default function Home() {
         <link rel="preconnect" href="<https://app.snipcart.com>" />
         <link rel="preconnect" href="<https://cdn.snipcart.com>" />
         <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
-        <script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
         <div hidden id="snipcart" data-api-key={process.env.SNIPCART_API}></div>
       </Head>
+
+      <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"  strategy="beforeInteractive" ></Script>
 
       <main className={styles.main}>
         <button className="snipcart-add-item"
