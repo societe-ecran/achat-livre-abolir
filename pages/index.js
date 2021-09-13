@@ -25,8 +25,6 @@ export default function Home() {
           Add to cart
         </button>
       </main>
-
-
     </div>
   )
 }
