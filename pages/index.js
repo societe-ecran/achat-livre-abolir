@@ -6,24 +6,24 @@ import Navbar from './components/Navbar'
 import Title from './components/Title'
 
 export default function Home() {
-  return (
-    <div>
-      <html lang="fr"/>
-      <Head>
-        <link rel="preconnect" href="<https://app.snipcart.com>" />
-        <link rel="preconnect" href="<https://cdn.snipcart.com>" />
-        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
-        <div hidden id="snipcart" data-api-key={process.env.SNIPCART_API}></div>
-      </Head>
+    return (
+        <div>
+            <html lang="fr" />
+            <Head>
+                <link rel="preconnect" href="<https://app.snipcart.com>" />
+                <link rel="preconnect" href="<https://cdn.snipcart.com>" />
+                <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+                <div hidden id="snipcart" data-api-key={process.env.SNIPCART_API}></div>
+            </Head>
 
-      <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js" strategy="beforeInteractive" ></Script>
+            <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js" strategy="beforeInteractive" ></Script>
 
 
-      <main>
-        <Title/>
-      <Navbar/>
-      <div className=" pt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className=" px-12 md:px-6  lg:px-12 flex flex-col">
+            <main>
+                <Title />
+                <Navbar />
+                <div className=" pt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className=" px-12 md:px-6  lg:px-24 flex flex-col ">
                         <Image
                             src={couv}
                             alt="Couverture Abolir la police"
@@ -255,8 +255,8 @@ export default function Home() {
                     </div>
 
                 </div>
-       
-      </main>
-    </div>
-  )
+
+            </main>
+        </div>
+    )
 }
