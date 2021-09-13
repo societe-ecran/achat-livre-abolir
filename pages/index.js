@@ -10,10 +10,11 @@ export default function Home() {
         <link rel="preconnect" href="<https://app.snipcart.com>" />
         <link rel="preconnect" href="<https://cdn.snipcart.com>" />
         <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+        <div hidden id="snipcart" data-api-key={process.env.SNIPCART_API}></div>
       </Head>
 
       <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js" strategy="beforeInteractive" ></Script>
-      <div hidden id="snipcart" data-api-key={process.env.SNIPCART_API}></div>
+    
 
       <main className={styles.main}>
         <button className="snipcart-add-item"
