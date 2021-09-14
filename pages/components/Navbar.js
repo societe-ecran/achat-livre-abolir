@@ -68,7 +68,6 @@ export default function Navbar() {
       href: '/groupes',
       number: 3
     },
-
   ]
 
 
@@ -113,8 +112,6 @@ export default function Navbar() {
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
 
 
-
-
                   <Popover className="relative">
                     {({ open }) => (
                       <>
@@ -148,8 +145,8 @@ export default function Navbar() {
                             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                               <div className="relative  bg-white p-7 ">
                                 {LeLivre.map((item) => (
-                                  <Link key={item.name}>
-                                    <a  key={item.name}
+                                  
+                                    <a href={item.href} key={item.name}
                                       className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                                     >
                                       <div className="ml-4 pt-3" >
@@ -161,7 +158,7 @@ export default function Navbar() {
                                         </p>
                                       </div>
                                     </a>
-                                  </Link>
+                                 
                                 ))}
                               </div>
                             </div>

@@ -34,7 +34,7 @@ export default function Home() {
                             className=''
                         />
 
-                        <div className=" pt-3 md:hidden">
+                        <div className=" pt-3 ">
                             <div className="">
                                 <span className="border-b border-gray-300  ">
                                     10 septembre 2021
@@ -74,7 +74,7 @@ export default function Home() {
                             États-Unis ces dix dernières années, ce recueil souhaite autant documenter que transmettre ce nouvel abolitionnisme : vivre sans police.
                         </div>
                     </div>
-                    <div className=' hidden md:flex flex-col xl:justify-between pr-12 '>
+                    <div className=' flex flex-col xl:justify-between pr-12 '>
                         <div className='flex flex-col items-end sabonRoman  '>
                             <h2>
                                 Introduction
@@ -109,7 +109,7 @@ export default function Home() {
                                 Conclusion
                             </h2>
                         </div>
-                        <div className=" hidden md:block sm:pt-24">
+                        {/* <div className=" hidden md:block sm:pt-24">
                             <div className="">
                                 <span className="border-b border-gray-300  ">
                                     10 septembre 2021
@@ -131,8 +131,8 @@ export default function Home() {
                                     14 euros
                                 </span>
                             </div>
-                        </div>
-                        <div className="pt-6 pb-6">
+                        </div> */}
+                        <div className="text-center md:text-left pt-6 pb-6">
                             <button className="snipcart-add-item rounded-full py-2 px-4 violetBack text-white  "
                                 data-item-id="livre"
                                 data-item-price="14"
