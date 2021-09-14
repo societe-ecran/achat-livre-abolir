@@ -20,7 +20,17 @@ export default function Home() {
 
 
             <main>
-                <Title />
+                <button className="snipcart-add-item"
+                    data-item-id="livre"
+                    data-item-price="14"
+                    data-item-url="/"
+                    data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+                    // data-item-image="/assets/images/starry-night.jpg"
+                    data-item-name="The Starry Night">
+                    Add to cart
+                </button>
+                
+                {/* <Title />
                 <Navbar />
                 <div className=" pt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className=" px-12 md:px-6  lg:px-24 flex flex-col ">
@@ -60,6 +70,7 @@ export default function Home() {
 
 
                                     <div className="pt-6 pb-6">
+                                        
                                         <button className="snipcart-add-item  "
                                             data-item-weight='494'
                                             data-item-id="livre"
@@ -182,7 +193,7 @@ export default function Home() {
 
                     </div>
 
-                </div>
+                </div> */}
 
             </main>
         </div>
