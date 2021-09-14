@@ -20,17 +20,7 @@ export default function Home() {
 
 
             <main>
-                <button className="snipcart-add-item"
-                    data-item-id="livre"
-                    data-item-price="14"
-                    data-item-url="/"
-                    data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-                    // data-item-image="/assets/images/starry-night.jpg"
-                    data-item-name="The Starry Night">
-                    Add to cart
-                </button>
-                
-                {/* <Title />
+                <Title />
                 <Navbar />
                 <div className=" pt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className=" px-12 md:px-6  lg:px-24 flex flex-col ">
@@ -43,7 +33,6 @@ export default function Home() {
                             height={468}
                             className=''
                         />
-
 
                         <div className=" pt-3 md:hidden">
                             <div className="">
@@ -67,25 +56,7 @@ export default function Home() {
                                     14 euros
                                 </span>
                             </div>
-
-
-                                    <div className="pt-6 pb-6">
-                                        
-                                        <button className="snipcart-add-item  "
-                                            data-item-weight='494'
-                                            data-item-id="livre"
-                                            data-item-price="14"
-                                            data-item-url="leLivre"
-                                            data-item-description="Paru le 10 septembre 2021. 336 pages.  ISBN: 979-10-96195-14-5 "
-                                            data-item-image="../public/couvMin.jpg"
-                                            data-item-name="Abolir la police. Echos des Etats-Unis.">
-                                            Acheter
-                                        </button>
-                                    </div>
-                            
                         </div>
-
-
                     </div>
 
                     <div className="flex flex-col sabonRoman md:pr-3 ">
@@ -102,11 +73,7 @@ export default function Home() {
 
                             États-Unis ces dix dernières années, ce recueil souhaite autant documenter que transmettre ce nouvel abolitionnisme : vivre sans police.
                         </div>
-
-
-
                     </div>
-
                     <div className=' hidden md:flex flex-col xl:justify-between pr-12 '>
                         <div className='flex flex-col items-end sabonRoman  '>
                             <h2>
@@ -164,37 +131,21 @@ export default function Home() {
                                     14 euros
                                 </span>
                             </div>
-
-                            <div className=" hidden md:block">
-
-                                <div>
-                                    <div className="pt-6 pb-6">
-                                        <button className="snipcart-add-item rounded-full py-2 px-4 violetBack text-white  "
-                                            data-item-id="livre"
-                                            data-item-price="14"
-                                            data-item-url="/leLivre"
-                                            data-item-description="Paru le 10 septembre 2021. 336 pages.  ISBN: 979-10-96195-14-5 "
-                                            // data-item-image="../public/couv.jpg"
-                                            data-item-name="Abolir la police. Échos des États-Unis">
-                                            Acheter
-                                        </button>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-
                         </div>
-
-
-
-
-
+                        <div className="pt-6 pb-6">
+                            <button className="snipcart-add-item rounded-full py-2 px-4 violetBack text-white  "
+                                data-item-id="livre"
+                                data-item-price="14"
+                                data-item-weight='494'
+                                data-item-url="/leLivre"
+                                data-item-description="Paru le 10 septembre 2021. 336 pages.  ISBN: 979-10-96195-14-5 "
+                                // data-item-image="../public/couv.jpg"
+                                data-item-name="Abolir la police. Échos des États-Unis">
+                                Acheter
+                            </button>
+                        </div>
                     </div>
-
-                </div> */}
-
+                </div>
             </main>
         </div>
     )
