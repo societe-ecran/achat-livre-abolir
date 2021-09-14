@@ -31,13 +31,13 @@ export default function Navbar() {
       name: 'Médias',
       description: 'articles, fanzines, bibliographie, filmographie, podcasts',
       href: '/AllerPlusLoin/allerPlusLoin',
-      number:1
+      number: 1
     },
     {
       name: 'Thématiques',
       description: 'histoire, réformes et luttes, justice transformatrice',
       href: '/AllerPlusLoin/allerPlusLoin',
-      number:0
+      number: 0
     }
   ]
 
@@ -79,15 +79,15 @@ export default function Navbar() {
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex justify-center h-16">
               <div className=' sm:hidden  block pt-4 pl-2'>
-                
-                  <a href="https://www.abolirlapolice.org/" className=''>
-                    <div className=' text-xl HarbourBold text-gray-700   '>
-                      <p className=''>
-                        ABOLIR LA POLICE
-                      </p>
-                    </div>
-                  </a>
-            
+
+                <a href="https://www.abolirlapolice.org/" className=''>
+                  <div className=' text-xl HarbourBold text-gray-700   '>
+                    <p className=''>
+                      ABOLIR LA POLICE
+                    </p>
+                  </div>
+                </a>
+
               </div>
 
 
@@ -122,8 +122,8 @@ export default function Navbar() {
                         >
                           <div className='flex flex-col '>
                             <span className="">Le livre </span>
-                            {router.pathname == '/' || router.pathname == '/leLivre' || router.pathname == '/sourcesEtTraductions' || 
-                            router.pathname == '/Traductions/neverGiveUp' ||  router.pathname == "Traductions/auWendy's" || router.pathname == "/Traductions/partirDesRessourcesExistantes" || router.pathname == "/Traductions/exercerAbolition" || router.pathname == "/Traductions/sistasMakinMove" ?
+                            {router.pathname == '/' || router.pathname == '/leLivre' || router.pathname == '/sourcesEtTraductions' ||
+                              router.pathname == '/Traductions/neverGiveUp' || router.pathname == "Traductions/auWendy's" || router.pathname == "/Traductions/partirDesRessourcesExistantes" || router.pathname == "/Traductions/exercerAbolition" || router.pathname == "/Traductions/sistasMakinMove" ?
                               <div className='text-center font-bold md:text-2xl text-red-700 transform -translate-y-6'>
                                 __
                               </div>
@@ -145,20 +145,20 @@ export default function Navbar() {
                             <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                               <div className="relative  bg-white p-7 ">
                                 {LeLivre.map((item) => (
-                                  
-                                    <a href={item.href} key={item.name}
-                                      className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                                    >
-                                      <div className="ml-4 pt-3" >
-                                        <p className="text-sm font-medium text-gray-900 ">
-                                          {item.name}
-                                        </p>
-                                        <p className="text-sm text-gray-500">
-                                          {item.description}
-                                        </p>
-                                      </div>
-                                    </a>
-                                 
+
+                                  <a href={item.href} key={item.name}
+                                    className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                                  >
+                                    <div className="ml-4 pt-3" >
+                                      <p className="text-sm font-medium text-gray-900 ">
+                                        {item.name}
+                                      </p>
+                                      <p className="text-sm text-gray-500">
+                                        {item.description}
+                                      </p>
+                                    </div>
+                                  </a>
+
                                 ))}
                               </div>
                             </div>
@@ -168,63 +168,31 @@ export default function Navbar() {
                       </>
                     )}
                   </Popover>
-
 
                   <Popover className="relative">
                     {({ open }) => (
-                      <>
-                        <Popover.Button
-                          className={`
+                      <Popover.Button
+                        className={`
                 ${open ? '' : 'text-opacity-90'}
                 text-black group bg-orange-700 px-3 py-2 rounded-md inline-flex items-center text-base font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
-                        >
-                          <div className='flex flex-col'>
-                            <span>Aller plus loin </span>
-                            {router.pathname == '/allerPlusLoin' ?
-                              <div className='text-center font-bold md:text-2xl text-red-700 transform -translate-y-6'>
-                                __
-                              </div>
-                              :
-                               <div className='text-center font-bold md:text-2xl text-white transform -translate-y-6'>
-                                __
-                              </div>}
-                          </div>
-                        </Popover.Button>
-                        <Transition
-                          as={Fragment}
-                          enter="transition ease-out duration-200"
-                          enterFrom="opacity-0 translate-y-1"
-                          enterTo="opacity-100 translate-y-0"
-                          leave="transition ease-in duration-150"
-                          leaveFrom="opacity-100 translate-y-0"
-                          leaveTo="opacity-0 translate-y-1"
-                        >                           
-                        <Popover.Panel className="absolute z-10  max-w-sm px-4 mt-1 transform -translate-x-1/2 left-1/2 sm:px-0 lg:max-w-3xl">
-                            <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                              <div className="relative  bg-white p-7 ">
-                                {AllerPlusLoin.map((item) => (
-                                    <a  href="https://www.abolirlapolice.org/AllerPlusLoin/allerPlusLoin"        
-                                      className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                                   key={item.name} >
+                      >
+                        <div className='flex flex-col'>
 
-                                      <div className="ml-4 pt-3" >
-                                        <p className="text-sm font-medium text-gray-900">
-                                          {item.name}
-                                        </p>
-                                        <p className="text-sm text-gray-500">
-                                          {item.description}
-                                        </p>
-                                      </div>
-                                    </a>
-                              
-                                ))}
-                              </div>
+                          <a href='https://www.abolirlapolice.org/AllerPlusLoin/allerPlusLoin'> Aller plus loin </a>
+
+                          {router.pathname == '/histoires' ?
+                            <div className='text-center font-bold md:text-2xl text-red-700 transform -translate-y-6'>
+                              __
                             </div>
-                          </Popover.Panel>
-                        </Transition>
-                      </>
+                            : ""}
+                        </div>
+
+                        {router.pathname == '/' ? "" : ''}
+
+                      </Popover.Button>
                     )}
                   </Popover>
+                  
 
 
                   <Popover className="relative">
@@ -235,9 +203,9 @@ export default function Navbar() {
                 text-black group bg-orange-700 px-3 py-2 rounded-md inline-flex items-center text-base font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
                       >
                         <div className='flex flex-col'>
-              
-                            <a  href='https://www.abolirlapolice.org/histoires'> Partager des histoires </a>
-             
+
+                          <a href='https://www.abolirlapolice.org/histoires'> Partager des histoires </a>
+
                           {router.pathname == '/histoires' ?
                             <div className='text-center font-bold md:text-2xl text-red-700 transform -translate-y-6'>
                               __
@@ -254,59 +222,27 @@ export default function Navbar() {
 
                   <Popover className="relative">
                     {({ open }) => (
-                      <>
-                        <Popover.Button
-                          className={`
+                      <Popover.Button
+                        className={`
                 ${open ? '' : 'text-opacity-90'}
                 text-black group bg-orange-700 px-3 py-2 rounded-md inline-flex items-center text-base font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
-                        >
-                          <div className='flex flex-col'>
-                            <span className="">Trouver des groupes près de chez vous </span>
-                            {router.pathname == '/groupes' ?
-                              <div className='text-center font-bold md:text-2xl text-red-700 transform -translate-y-6'>
-                                __
-                              </div>
-                              : ""}
-                          </div>
-                        </Popover.Button>
-                        <Transition
-                          as={Fragment}
-                          enter="transition ease-out duration-200"
-                          enterFrom="opacity-0 translate-y-1"
-                          enterTo="opacity-100 translate-y-0"
-                          leave="transition ease-in duration-150"
-                          leaveFrom="opacity-100 translate-y-0"
-                          leaveTo="opacity-0 translate-y-1"
-                        >
-                          <Popover.Panel className="absolute  max-w-sm px-4 mt-1 transform -translate-x-1/2 left-1/2 sm:px-0 lg:max-w-3xl">
-                            <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                              <div className="relative z-50  bg-white p-7 ">
-                              
-                                {Groupes.map((item) => (
-                            
-                                   
-                                  
-                                    <a href="https://www.abolirlapolice.org/groupes"
-                                      className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                                   key={item.name} >
-                                      <div className="ml-4 pt-3">
-                                        <p className="text-sm font-medium text-gray-900">
-                                          {item.name}
-                                        </p>
-                                        <p className="text-sm text-gray-500">
-                                          {item.description}
-                                        </p>
-                                      </div>
-                                    </a>
-                            
-                                ))}
-                              </div>
+                      >
+                        <div className='flex flex-col'>
+
+                          <a href='https://www.abolirlapolice.org/groupes'> Trouver des groupes près de chez vous </a>
+
+                          {router.pathname == '/histoires' ?
+                            <div className='text-center font-bold md:text-2xl text-red-700 transform -translate-y-6'>
+                              __
                             </div>
-                          </Popover.Panel>
-                        </Transition>
-                      </>
+                            : ""}
+                        </div>
+
+                        {router.pathname == '/' ? "" : ''}
+
+                      </Popover.Button>
                     )}
-                  </Popover>
+                  </Popover>  
                 </div>
               </div>
 
@@ -347,19 +283,19 @@ export default function Navbar() {
               </div>
 
               <div className='transition duration-150 ease-in-out rounded-lg py-3 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50'>
-        
-                  <a     href='https://www.abolirlapolice.org/AllerPlusLoin'>
-                    Aller plus loin
-                  </a>
-            
+
+                <a href='https://www.abolirlapolice.org/AllerPlusLoin'>
+                  Aller plus loin
+                </a>
+
               </div>
 
               <div className='transition duration-150 ease-in-out rounded-lg py-3  hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50'>
-               
-                  <a href="https://www.abolirlapolice.org/histoires">
-                    Partager nos histoires
-                  </a>
-             
+
+                <a href="https://www.abolirlapolice.org/histoires">
+                  Partager nos histoires
+                </a>
+
               </div>
 
 
@@ -368,22 +304,22 @@ export default function Navbar() {
 
                 <div className='pl-5 pb-4 pt-2'>
                   {Groupes.map((item) => (
-                  
-                      
-                      <a href='https://www.abolirlapolice.org/groupes'
-                        className="flex items-center p-2 -m-3 pt-2  transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                      key={item.name}>
-                        <div className="ml-4 pt-3" >
-                          <p className="text-sm font-medium text-gray-900">
-                            {item.name}
-                          </p>
-                          <p className="text-sm text-gray-500">
-                            {item.description}
-                          </p>
-                        </div>
-                      </a>
 
- 
+
+                    <a href='https://www.abolirlapolice.org/groupes'
+                      className="flex items-center p-2 -m-3 pt-2  transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                      key={item.name}>
+                      <div className="ml-4 pt-3" >
+                        <p className="text-sm font-medium text-gray-900">
+                          {item.name}
+                        </p>
+                        <p className="text-sm text-gray-500">
+                          {item.description}
+                        </p>
+                      </div>
+                    </a>
+
+
                   ))}
 
                 </div>

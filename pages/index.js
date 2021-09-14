@@ -34,48 +34,21 @@ export default function Home() {
                             className=''
                         />
 
-                        <div className=" pt-3 ">
-                            <div className="">
-                                <span className="border-b border-gray-300  ">
-                                    10 septembre 2021
-                                </span>
-                            </div>
-                            <div >
-                                <span className="border-b border-gray-300">
-                                    336 pages
-                                </span>
-                            </div>
-                            <div className="">
-                                <span className="border-b border-gray-300">
-                                    ISBN: 979-10-96195-14-5
-                                </span>
-
-                            </div>
-                            <div className="">
-                                <span className="border-b border-gray-300">
-                                    14 euros
-                                </span>
-                            </div>
-                        </div>
                     </div>
 
-                    <div className="flex flex-col sabonRoman md:pr-3 ">
-                        <div className='text-sm md:text-base px-12'>
+                    <div className="flex flex-col  md:pr-3 ">
+                        <div className='text-sm md:text-base sabonRoman px-12 '>
                             Minneapolis, mai 2020.
                             <br /> George Floyd, un Afro-Américain de 46 ans, meurt étouffé par la police. Une vague de contestations, inédite depuis les années 1960, s’empare du pays. Manifestations, mobilisations sur les réseaux sociaux, pillages : la singularité de ce mouvement tient autant à son ampleur qu’à la radicalité de ses propositions.
-
                             Il ne s’agit plus de dénoncer les dérives de l’institution policière, mais de questionner son existence même.
                             <br /> Defund and Abolish the police, démanteler la police et ses financements, sont des mots d’ordre qui, vus de France, peuvent sembler bien abstraits.
-
                             Ils s’inscrivent pourtant dans l’histoire de la lutte des Noir·es contre l’esclavage et l’incarcération de masse. Ils s’incarnent aussi dans des expériences de justice transformatrice, de solidarité communautaire, d’autodéfense et de soin féministes.
-
                             <br /> En traduisant plusieurs textes écrits aux
-
                             États-Unis ces dix dernières années, ce recueil souhaite autant documenter que transmettre ce nouvel abolitionnisme : vivre sans police.
                         </div>
                     </div>
-                    <div className=' flex flex-col xl:justify-between pr-12 '>
-                        <div className='flex flex-col items-end sabonRoman  '>
+                    <div className=' flex flex-col pr-12 pt-3 md:pt-0 pl-12 md:pl-0  '>
+                        <div className='flex flex-col  sabonRoman  '>
                             <h2>
                                 Introduction
                             </h2>
@@ -109,7 +82,7 @@ export default function Home() {
                                 Conclusion
                             </h2>
                         </div>
-                        {/* <div className=" hidden md:block sm:pt-24">
+                        <div className=" pt-6 ">
                             <div className="">
                                 <span className="border-b border-gray-300  ">
                                     10 septembre 2021
@@ -131,7 +104,8 @@ export default function Home() {
                                     14 euros
                                 </span>
                             </div>
-                        </div> */}
+                        </div>
+            
                         <div className="text-center md:text-left pt-6 pb-6">
                             <button className="snipcart-add-item rounded-full py-2 px-4 violetBack text-white  "
                                 data-item-id="livre"

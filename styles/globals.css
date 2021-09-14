@@ -7,6 +7,16 @@
   src: local("HarbourBold"), url("./fonts/HarbourBold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Roman";
+  src: local("SabonRoman"), url("./fonts/Sabon_Roman.ttf") format("truetype");
+  /* font-weight: bold; */
+}
+
+.sabonRoman {
+  font-family: "SabonRoman";
+}
+
 .HarbourBold {
   font-family: "HarbourBold";
 }
