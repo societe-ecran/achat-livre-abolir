@@ -366,7 +366,7 @@ export default function Navbar() {
               <div className='pt-2'>
                 Trouver des groupes près de chez vous
 
-                <div className='pl-5 pb-4'>
+                <div className='pl-5 pb-4 pt-2'>
                   {Groupes.map((item) => (
                   
                       
