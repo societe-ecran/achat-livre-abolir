@@ -10,10 +10,10 @@ export default function Home() {
         <div>
             <html lang="fr" />
             <Head>
-            <title>{props.title}</title>
+            <title>"Abolir la police. Echos des états-unis"</title>
                 <meta name="description" content="sortie septembre 2021" />
                 <meta property="og:title" content="Abolir la police. Echos des états-unis." />
-                <meta property="og:description" content={props.description} />
+                <meta property="og:description" content="Abolir la police. Echos des états-unis. Acheter le livre" />
                 <meta property="og:url" content="https://www.abolirlapolice.org/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content={`https://achat-livre-abolir.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Fcouv.93478b6c9ee7db2c15aef8dc9bfe9289.jpg&w=1920&q=100`} />

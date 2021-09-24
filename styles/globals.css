@@ -9,22 +9,18 @@
 
 @font-face {
   font-family: "Roman";
-  src: local("SabonRoman"), url("./fonts/Sabon_Roman.ttf") format("truetype");
-  /* font-weight: bold; */
+  src: local("SabonRoman"), url("./fonts/Sabon_Roman.ttf") format("truetype")
 }
 
 .sabonRoman {
   font-family: "SabonRoman";
 }
-
 .HarbourBold {
   font-family: "HarbourBold";
 }
 .titreNav {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 .violetBack {
   background-color: #59577c;
-  /* color: #7f63ff; */
 }

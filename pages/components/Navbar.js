@@ -104,7 +104,6 @@ export default function Navbar() {
                 </Disclosure.Button>
 
 
-
               </div>
               <div className="flex-1 flex items-center justify-center pt-5">
 
@@ -192,7 +191,7 @@ export default function Navbar() {
                       </Popover.Button>
                     )}
                   </Popover>
-                  
+
 
 
                   <Popover className="relative">
@@ -243,7 +242,7 @@ export default function Navbar() {
 
                       </Popover.Button>
                     )}
-                  </Popover>  
+                  </Popover>
                 </div>
               </div>
 
@@ -261,52 +260,44 @@ export default function Navbar() {
                 <div className='pl-5 pb-4'>
 
                   {LeLivre.map((item) => (
-                    <Link href="/" key={item.name} >
-                      <a key={item.name}
-                        className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
-                      >
-
-                        {/* <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white sm:h-12 sm:w-12">
-                          <item.icon aria-hidden="true" />
-                        </div> */}
-                        <div className="ml-4 pt-3" >
-                          <p className="text-sm font-medium text-gray-900 ">
-                            {item.name}
-                          </p>
-                          <p className="text-sm text-gray-500">
-                            {item.description}
-                          </p>
-                        </div>
-                      </a>
-                    </Link>
+                    <a href={item.href} key={item.name}
+                      className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                    >
+                      <div className="ml-4 pt-3" >
+                        <p className="text-sm font-medium text-gray-900 ">
+                          {item.name}
+                        </p>
+                        <p className="text-sm text-gray-500">
+                          {item.description}
+                        </p>
+                      </div>
+                    </a>
                   ))}
                 </div>
               </div>
 
               <div className='transition duration-150 ease-in-out rounded-lg py-3 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50'>
-
-                <a href='https://www.abolirlapolice.org/AllerPlusLoin'>
+                <a href='https://www.abolirlapolice.org/AllerPlusLoin/allerPlusLoin'>
                   Aller plus loin
                 </a>
-
               </div>
 
               <div className='transition duration-150 ease-in-out rounded-lg py-3  hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50'>
-
                 <a href="https://www.abolirlapolice.org/histoires">
                   Partager nos histoires
                 </a>
-
               </div>
 
-
-              <div className='pt-2'>
+              <div className='transition duration-150 ease-in-out rounded-lg py-3  hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50'>
+                <a href='https://www.abolirlapolice.org/groupes'>
                 Trouver des groupes près de chez vous
+                </a>
+              </div>
 
+              {/* <div className='pt-2'>
+                Trouver des groupes près de chez vous
                 <div className='pl-5 pb-4 pt-2'>
                   {Groupes.map((item) => (
-
-
                     <a href='https://www.abolirlapolice.org/groupes'
                       className="flex items-center p-2 -m-3 pt-2  transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
                       key={item.name}>
@@ -319,12 +310,9 @@ export default function Navbar() {
                         </p>
                       </div>
                     </a>
-
-
                   ))}
-
                 </div>
-              </div>
+              </div> */}
             </div>
           </Disclosure.Panel>
         </>
