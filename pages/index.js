@@ -10,7 +10,7 @@ export default function Home() {
         <div>
             <html lang="fr" />
             <Head>
-            <title>"Abolir la police. Echos des états-unis"</title>
+            <title>Abolir la police. Echos des états-unis</title>
                 <meta name="description" content="sortie septembre 2021" />
                 <meta property="og:title" content="Abolir la police. Echos des états-unis." />
                 <meta property="og:description" content="Abolir la police. Echos des états-unis. Acheter le livre" />
