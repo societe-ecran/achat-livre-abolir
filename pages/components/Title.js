@@ -6,8 +6,8 @@ const Title = () => {
     return (
 
         <div className=" hidden sm:block  text-center">
-            <Link href="/actualites">
-                <a className='border'>
+          
+                <a href="https://abolirlapolice.org/actualites" className='border'>
                     <div className=' text-4xl HarbourBold text-gray-700   '>
                     <p className=''>   
                        ABOLIR LA POLICE
@@ -15,7 +15,7 @@ const Title = () => {
                  
                     </div>
                 </a>
-            </Link>
+        
         </div>
 
     )
