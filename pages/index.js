@@ -125,7 +125,7 @@ export default function Home() {
             
                         <div className="text-center md:text-left pt-6 pb-6">
                         {/* snipcart-add-item  */}
-                        <a href="https://www.placedeslibraires.fr/listeliv.php?base=allbooks&mots_recherche=abolir+la+police" target="_blank">
+                        <a href="https://www.placedeslibraires.fr/listeliv.php?base=allbooks&mots_recherche=abolir+la+police" target="_blank" rel="noopener noreferrer">
                             <button className="rounded-full py-2 px-4 violetBack text-white"
                     
                                 // data-item-id="livre"
